@@ -1,0 +1,24 @@
+<h1>Wonders of the World</h1>
+
+<table border="1" cellpadding="10">
+  <tr>
+   <th>Wonder</th>
+   <th>Country</th>
+  </tr>
+  <% for wonder in Wonders.all %>
+    <tr>
+      <td> 
+        <a href="/wonders/<%= wonder.id %>/details">
+          <%= wonder.name %>
+        </a>
+      </td>
+      <td> <%= wonder.country %></td>
+      <td>
+        <a href="/wonders/<%= wonder.id %>/delete">Delete</a>
+      </td>
+    </tr>
+  <% end %>
+</table>
+<br>
+<a href="/wonders/new"> Click here to add a new Wonder!</a>
+

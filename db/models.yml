@@ -1,3 +1,10 @@
+Wonders
+  name: text
+  image_url: text
+  country: text
+  annual_visitors: integer
+
+
 # Example:
 #
 # Book

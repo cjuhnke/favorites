@@ -1,0 +1,8 @@
+<% id_from_url = params["id"] %>
+<% wonder = Wonders.find_by(id: id_from_url) %>
+<p align="right"><a href="/wonders">Back to list</a></p>
+<h1><%= wonder.name %> Details</h1>
+
+<h2>Country: <%= wonder.country %></h2>
+<p><img src="<%= wonder.image_url %>" height="350"></p>
+<p>Total Annual Visitors: <%= wonder.annual_visitors %></p>
